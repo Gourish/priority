@@ -3,21 +3,21 @@ Sample spring boot application to store user priority areas and ratings.
 
 This is a spring boot project using maven. 
 
-##Local setup:
+## Local setup:
 Make sure postgreSQL is running in local.
 Edit application.properties to have proper credentials.
 
-##Commands for running the application:
+## Commands for running the application:
 $mvn clean install
  got to target folder 
  
 $java -jar priority-0.0.1-SNAPSHOT.jar
 
-##Assumptions:
+## Assumptions:
 Application assumes that user and areas already exists in the user and area table respectively. New user or new area should  be added in the database directly . 
 If the REST API request has new user or new area then application it throws error with status code 500.
 
-##REST endpoints
+## REST endpoints
 REST API to get all the areas in the database
 GET  /priority/allAreas 
 
